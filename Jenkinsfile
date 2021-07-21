@@ -11,7 +11,21 @@ pipeline {
 			}	
 		}
 		
-		stage('TEST') {
+		stage('TEST') { 
+			parallel {
+				stage('TEST1') {
+					steps {
+						sh 'sleep 5'
+					}
+				}
+				stage('TEST2') {
+					steps {
+						sh 'sleep 5'
+					}
+				}
+			}
+		}
+				
 			steps {
 				sh '''
 					pwd

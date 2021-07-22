@@ -26,14 +26,7 @@ pipeline {
 			}
 		}
 				
-			steps {
-				sh '''
-					pwd
-					sleep 5
-					echo This is the fist stage: TEST
-				'''
-			}	
-		}
+
 		
 		stage('DEPLOY') {
 			steps {

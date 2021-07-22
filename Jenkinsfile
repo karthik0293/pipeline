@@ -23,6 +23,16 @@ pipeline {
 						sh 'sleep 5'
 					}
 				}
+				stage('TEST3') {
+					steps {
+						sh 'sleep 5'
+					}
+				}
+				stage('TEST4') {
+					steps {
+						sh 'sleep 5'
+					}
+				}
 			}
 		}
 				
